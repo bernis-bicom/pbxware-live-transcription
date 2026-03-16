@@ -44,6 +44,12 @@ Without these settings, PBXware will not send transcription data.
    ws://your-server-ip:3000/ws
    ```
 
+5. In the **Additional Details** field, paste:
+   ```json
+   {"caller_id":"%CALLER_ID%","callee_id":"%CALLEE_ID%","callee_name":"%CALLEE_NAME%","channel_name":"%CHANNEL_NAME%"}
+   ```
+   This lets the dashboard show caller/callee info for each call.
+
 That's it! Live transcriptions will appear in the dashboard as calls happen.
 
 ## Optional Settings
