@@ -1,0 +1,11 @@
+{
+  "name": "pbxware-live-transcription",
+  "version": "1.0.0",
+  "description": "Self-hosted live call transcription dashboard for PBXware",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --compile --outfile pbxware-live-transcription",
+    "build:all": "bun build src/index.ts --compile --target=bun-linux-x64 --outfile dist/pbxware-live-transcription-linux-x64 && bun build src/index.ts --compile --target=bun-linux-x64-baseline --outfile dist/pbxware-live-transcription-linux-x64-baseline && bun build src/index.ts --compile --target=bun-linux-arm64 --outfile dist/pbxware-live-transcription-linux-arm64 && bun build src/index.ts --compile --target=bun-darwin-x64 --outfile dist/pbxware-live-transcription-darwin-x64 && bun build src/index.ts --compile --target=bun-darwin-arm64 --outfile dist/pbxware-live-transcription-darwin-arm64 && bun build src/index.ts --compile --target=bun-windows-x64 --outfile dist/pbxware-live-transcription-windows-x64.exe"
+  }
+}

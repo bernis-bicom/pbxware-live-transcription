@@ -1,0 +1,17 @@
+services:
+  live-transcription:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - STORAGE=memory
+      # - STORAGE=sqlite
+      # - DB_PATH=data/transcription.db
+      # - PASSWORD=your-secret-password
+      # - MAX_MESSAGES=500
+    volumes:
+      - data:/app/data
+
+volumes:
+  data:
