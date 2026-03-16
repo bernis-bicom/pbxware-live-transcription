@@ -44,7 +44,7 @@ Without these settings, PBXware will not send transcription data.
    ws://your-server-ip:3000/ws
    ```
 
-5. In the **Additional Details** field, paste:
+5. In the **Metadata** field on the Live Transcription settings page, paste:
    ```json
    {"caller_id":"%CALLER_ID%","callee_id":"%CALLEE_ID%","callee_name":"%CALLEE_NAME%","channel_name":"%CHANNEL_NAME%"}
    ```
